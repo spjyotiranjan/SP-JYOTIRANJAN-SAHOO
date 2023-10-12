@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@500&family=Rubik&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+nav,
+#intro,
+#portfolio,
+#skills {
+  padding: 0px 100px;
+}
+
+/* navigation starts here */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+  width: 80vw;
+  border-radius: 20px;
+  margin: 0px 50px;
+  align-content: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(243, 255, 244, 0.4),
+    rgba(161, 224, 255, 0.2)
+  );
+  backdrop-filter: blur(1rem);
+}
+#navigate {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+#namelogo > h2 {
+  background: linear-gradient(to right, #7cff8e, #79ccff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+#navigate > a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* header starts here */
+
+header {
+  background-image: url("assets/Artboard\ 1.png");
+  margin: 100px 0px;
+  background-size: 100vw;
+  /* animation: open 1s 1; */
+}
+#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 600px;
+  animation-name: open;
+  animation-delay: 0.7s;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+}
+#profile-pic {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(
+    to right,
+    rgba(47, 255, 75, 0.4),
+    rgba(21, 165, 255, 0.2)
+  );
+  border-radius: 50%;
+  backdrop-filter: blur(2px);
+  box-shadow: -2px 2px 4rem rgba(40, 69, 38, 0.2);
+}
+#profile-pic > img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+#name > h1 {
+  font-size: 60px;
+}
+#streams {
+  display: flex;
+  width: 380px;
+  justify-content: space-between;
+}
+#streams > button {
+  display: flex;
+  padding: 5px 20px;
+  height: 45px;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  background-color: rgb(180, 242, 189);
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: rgba(180, 242, 189, 0.5);
+  color: #fff;
+}
+button > a {
+  text-decoration: none;
+  color: black;
+}
+.small {
+  width: 25px;
+  height: auto;
+  margin-right: 8px;
+}
+#text > p > span {
+  background: linear-gradient(to right, #7cff8e, #79ccff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+#text > p {
+  font-size: 18px;
+}
+#contact {
+  width: 250px;
+  height: 45px;
+  background-color: #0070ff;
+  border: none;
+  border-radius: 22.5px;
+  -webkit-backdrop-filter: blur(8px); /* Safari 9+ */
+  backdrop-filter: blur(8px); /* Chrome and Opera */
+  box-shadow: 0px 10px 15px 10px rgba(76, 154, 255, 0.15);
+  background-color: rgba(44, 136, 255, 0.75);
+}
+#contact > a {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* main starts here  */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60px;
+  justify-content: space-between;
+}
+.heading > p {
+  color: #9397a5;
+}
+.circle1 {
+  width: 80%;
+  height: 500px;
+  animation: floating 5s infinite;
+}
+.circle2 {
+  width: 80%;
+  height: 0px;
+  animation: floating 5s infinite;
+}
+.circle-g {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  /* background: white; */
+  background: linear-gradient(
+    to right bottom,
+    rgba(160, 255, 166, 0.9),
+    rgba(255, 255, 255, 0.1)
+  );
+  /* position: absolute; */
+  position: relative;
+  z-index: -1;
+  top: -10%;
+  right: 15%;
+
+  /* box-shadow: -2px 2px 4rem rgba(40, 69, 38, 0.2); */
+}
+.circle-b {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  /* background: white; */
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.1),
+    rgba(143, 203, 255, 0.9)
+  );
+  /* position: absolute; */
+  position: relative;
+  z-index: -1;
+  top: 100%;
+  left: 75%;
+}
+/* #first-g{
+        
+        top: 875px;
+        left: 100px;
+        transform: translate(0%, 0%);
+        
+    }
+    #first-b{
+        top: 1275px;
+        right: 100px;
+    } */
+/* #second-g{
+        top: 900px;
+        left: 0%;
+    } */
+.box {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+  z-index: -1;
+  position: absolute;
+  top: 8;
+  /* background-color: #0070FF;s */
+}
+.heading {
+  margin: 80px;
+}
+.container {
+  /* background: white; */
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.2)
+  );
+  backdrop-filter: blur(1rem);
+  width: 1000px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  border-radius: 40px;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  padding: 80px;
+  flex-wrap: wrap;
+  margin-bottom: 150px;
+}
+#first {
+  height: 1000px;
+}
+.container > div {
+  width: 440px;
+  height: 440px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#second > div {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 450px;
+  text-align: center;
+  padding: 20px;
+}
+.title {
+  display: flex;
+}
+.container > div:nth-child(even) {
+  background: linear-gradient(
+    to right bottom,
+    rgba(160, 255, 166, 0.9),
+    rgba(255, 255, 255, 0.1)
+  );
+}
+
+.container > div:nth-child(odd) {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.1),
+    rgba(143, 203, 255, 0.9)
+  );
+}
+
+.container > div > a > img {
+  max-width: 420px;
+  max-height: 420px;
+  border-radius: 40px;
+}
+
+.container > div:hover {
+  /* width: 350px;
+        height: 350px; */
+  padding: 20px;
+  transition: 0.3s;
+}
+#about {
+  padding: 0;
+  width: 75vw;
+}
+#about > div {
+  width: 75vw;
+  size: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 100px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(96, 175, 255, 0.4),
+    rgba(200, 216, 207, 0.2)
+  );
+}
+#about > div > .title {
+  margin-bottom: 50px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes open {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
